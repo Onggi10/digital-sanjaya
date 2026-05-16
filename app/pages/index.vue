@@ -1,18 +1,18 @@
 <script setup>
 useSeoMeta({
-  title: 'Judul Halaman',
-  description: 'Deskripsi SEO',
-  ogTitle: 'Judul untuk social media',
-  ogDescription: 'Deskripsi untuk share',
+  title: 'Jasa Pembuatan Website & Aplikasi Terpercaya | PT Digital Sanjaya',
+  description: 'Tingkatkan omset bisnis Anda dengan website profesional, undangan digital, dan desain kreatif dari PT Digital Sanjaya. Harga terjangkau, kualitas premium.',
+  ogTitle: 'PT Digital Sanjaya - Partner Transformasi Digital Anda',
+  ogDescription: 'Kami membantu UMKM & Corporate go-digital dengan solusi website, desain, dan aplikasi yang dirancang untuk konversi.',
 })
 
 useHead({
-  title: 'Solusi Digital untuk Bisnis Modern | PT Digital Sanjaya',
+  title: 'Jasa Pembuatan Website & Aplikasi Terpercaya | PT Digital Sanjaya',
   meta: [
     {
       name: 'description',
       content:
-        'Kami membantu bisnis berkembang melalui website profesional, aplikasi modern, dan sistem digital handal.',
+        'Tingkatkan omset bisnis Anda dengan website profesional, undangan digital, dan desain kreatif dari PT Digital Sanjaya. Harga terjangkau, kualitas premium.',
     },
   ],
 })
@@ -23,6 +23,7 @@ useHead({
     <HeroSection />
     <WhyUsSection />
     <ServicesSection />
+    <PortfolioSection />
     <PricingSection />
     <TestimonialSection />
     <CTASection />
