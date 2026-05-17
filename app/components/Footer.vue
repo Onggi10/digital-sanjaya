@@ -17,9 +17,9 @@
         <h4 class="text-white font-semibold mb-4">Menu</h4>
         <ul class="space-y-2">
           <li><NuxtLink to="/" class="footer-link">Home</NuxtLink></li>
-          <li><NuxtLink to="/about" class="footer-link">About</NuxtLink></li>
-          <li><NuxtLink to="/services" class="footer-link">Services</NuxtLink></li>
-          <li><NuxtLink to="/contact" class="footer-link">Contact</NuxtLink></li>
+          <li><NuxtLink to="/#services" class="footer-link">Layanan</NuxtLink></li>
+          <li><NuxtLink to="/#pricing" class="footer-link">Harga</NuxtLink></li>
+          <li><NuxtLink to="/#contact" class="footer-link">Kontak</NuxtLink></li>
         </ul>
       </div>
 

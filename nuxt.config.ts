@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
+  
+  site: {
+    url: 'https://digitalsanjaya.com',
+    name: 'PT Digital Sanjaya'
+  },
 
   app: {
     head: {
