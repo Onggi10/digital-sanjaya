@@ -12,8 +12,9 @@ const waLink = `https://wa.me/${phoneNumber}?text=Halo, saya ingin konsultasi.`
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
       <!-- Logo -->
-      <NuxtLink to="/" class="text-xl font-bold text-green-600">
-        Digital Sanjaya
+      <NuxtLink to="/" class="flex items-center gap-2 text-xl font-bold text-green-600">
+        <img src="/favicon.png" alt="Digital Sanjaya Logo" class="h-8 w-8 object-contain" />
+        <span>Digital Sanjaya</span>
       </NuxtLink>
 
       <!-- Desktop Menu -->
