@@ -29,14 +29,14 @@
         <ul class="space-y-2 text-sm">
           <li>Email: onggisanjaya@gmail.com</li>
           <li>Phone: +62 895 3131 0890</li>
-          <li>Kota Bogor, Bogor Tengah, Indonesia</li>
+          <li>Jln Lebak Pasar, Babakan Pasar, Kota Bogor, Bogor Tengah, 16126, Jawa Barat, Indonesia</li>
         </ul>
       </div>
     </div>
 
     <!-- Bottom -->
     <div class="border-t border-gray-700 text-center py-4 text-sm">
-      © {{ new Date().getFullYear() }} Company. All rights reserved.
+      © {{ new Date().getFullYear() }} PT Digital Sanjaya. All rights reserved.
     </div>
   </footer>
 </template>

@@ -72,7 +72,8 @@ ${message.value}
             </div>
             <div>
               <p class="font-medium text-gray-800">Alamat</p>
-              <p class="text-gray-600">Kota Bogor, Bogor Tengah, Indonesia</p>
+              <p class="text-gray-600">Jln Lebak Pasar, Babakan Pasar, Kota Bogor,</p>
+              <p class="text-gray-600">Bogor Tengah, 16126, Jawa Barat, Indonesia</p>
             </div>
           </li>
         </ul>

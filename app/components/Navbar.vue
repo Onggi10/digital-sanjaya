@@ -13,7 +13,7 @@ const waLink = `https://wa.me/${phoneNumber}?text=Halo, saya ingin konsultasi.`
 
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-2 text-xl font-bold text-green-600">
-        <img src="/favicon.png" alt="Digital Sanjaya Logo" class="h-8 w-8 object-contain" />
+        <img src="/favicon.png" alt="Digital Sanjaya Logo" class="h-20 w-20 object-contain" />
         <span>Digital Sanjaya</span>
       </NuxtLink>
 
