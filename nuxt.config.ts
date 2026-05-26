@@ -12,6 +12,14 @@ export default defineNuxtConfig({
     routes: ['/', '/blog', '/services/web-development'],
   },
 
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/blog'],
+    },
+  },
+
   app: {
     head: {
       htmlAttrs: {

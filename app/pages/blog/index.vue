@@ -4,13 +4,7 @@ import { blogPosts } from '~/data/blogPosts'
 
 const fallbackImage = 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80'
 
-const { data: externalPostsData } = await useFetch('/api/rssBlog', {
-  baseURL: '',
-  default: () => [],
-})
-
-const externalPosts = computed(() => externalPostsData.value || [])
-const posts = computed(() => (externalPosts.value.length ? externalPosts.value : blogPosts))
+const posts = computed(() => blogPosts)
 const currentPage = ref(0)
 const slides = computed(() => {
   const all = posts.value || []
@@ -23,7 +17,6 @@ const slides = computed(() => {
 })
 const visiblePosts = computed(() => slides.value[currentPage.value] || [])
 const totalPages = computed(() => slides.value.length)
-const isExternalFeed = computed(() => externalPosts.value?.length > 0)
 
 watch(posts, () => {
   currentPage.value = 0
@@ -49,7 +42,7 @@ const nextSlide = () => {
         Dapatkan insight terbaru yang cocok untuk bisnis jasa website, mulai dari tren desain, AI, keamanan, hingga strategi digital marketing.
       </p>
       <p class="text-sm text-slate-500">
-        {{ isExternalFeed ? 'Konten diambil otomatis dari sumber berita teknologi terpercaya.' : 'Menampilkan konten lokal karena sumber berita eksternal belum dapat dimuat.' }}
+        Menampilkan konten blog lokal dari Digital Sanjaya.
       </p>
     </div>
 
@@ -59,26 +52,14 @@ const nextSlide = () => {
         :key="post.slug"
         class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
       >
-        <div v-if="post.isExternal" class="group overflow-hidden">
-          <a :href="post.link" target="_blank" rel="noopener" class="block overflow-hidden">
-            <img
-              :src="post.image || fallbackImage"
-              :alt="post.title"
-              @error="(event) => event.target.src = fallbackImage"
-              class="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
-            />
-          </a>
-        </div>
-        <div v-else class="group overflow-hidden">
-          <NuxtLink :to="`/blog/${post.slug}`" class="block overflow-hidden">
-            <img
-              :src="post.image || fallbackImage"
-              :alt="post.title"
-              @error="(event) => event.target.src = fallbackImage"
-              class="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
-            />
-          </NuxtLink>
-        </div>
+        <NuxtLink :to="`/blog/${post.slug}`" class="group block overflow-hidden">
+          <img
+            :src="post.image || fallbackImage"
+            :alt="post.title"
+            @error="(event) => event.target.src = fallbackImage"
+            class="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+        </NuxtLink>
 
         <div class="p-6">
           <div class="mb-4 flex items-center gap-3 text-sm text-slate-500">
@@ -86,39 +67,20 @@ const nextSlide = () => {
             <span>{{ post.date }}</span>
           </div>
 
-          <div v-if="post.isExternal">
-            <a :href="post.link" target="_blank" rel="noopener" class="block text-2xl font-semibold text-slate-900 hover:text-green-600">
-              {{ post.title }}
-            </a>
-          </div>
-          <div v-else>
-            <NuxtLink :to="`/blog/${post.slug}`" class="block text-2xl font-semibold text-slate-900 hover:text-green-600">
-              {{ post.title }}
-            </NuxtLink>
-          </div>
+          <NuxtLink :to="`/blog/${post.slug}`" class="block text-2xl font-semibold text-slate-900 hover:text-green-600">
+            {{ post.title }}
+          </NuxtLink>
 
           <p class="mt-4 text-slate-600 leading-7">{{ post.summary }}</p>
 
           <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
             <span class="text-sm font-semibold text-slate-500">{{ post.source || 'Digital Sanjaya' }}</span>
-            <div>
-              <a
-                v-if="post.isExternal"
-                :href="post.link"
-                target="_blank"
-                rel="noopener"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-green-600"
-              >
-                Baca selengkapnya →
-              </a>
-              <NuxtLink
-                v-else
-                :to="`/blog/${post.slug}`"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-green-600"
-              >
-                Baca selengkapnya →
-              </NuxtLink>
-            </div>
+            <NuxtLink
+              :to="`/blog/${post.slug}`"
+              class="inline-flex items-center gap-2 text-sm font-semibold text-green-600"
+            >
+              Baca selengkapnya →
+            </NuxtLink>
           </div>
         </div>
       </article>

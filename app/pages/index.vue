@@ -1,9 +1,9 @@
 <script setup>
 useSeoMeta({
-  title: 'Jasa Pembuatan Website & Aplikasi Terpercaya | PT Digital Sanjaya',
-  description: 'Tingkatkan omset bisnis Anda dengan website profesional, undangan digital, dan desain kreatif dari PT Digital Sanjaya. Harga terjangkau, kualitas premium.',
-  ogTitle: 'PT Digital Sanjaya - Partner Transformasi Digital Anda',
-  ogDescription: 'Kami membantu UMKM & Corporate go-digital dengan solusi website, desain, dan aplikasi yang dirancang untuk konversi.',
+  title: 'Digital Sanjaya Website - Jasa Pembuatan Website & Aplikasi Terpercaya',
+  description: 'Digital Sanjaya Website menawarkan jasa pembuatan website profesional, undangan digital, dan solusi digital untuk UMKM dan bisnis profesional.',
+  ogTitle: 'Digital Sanjaya Website - Solusi Website Profesional',
+  ogDescription: 'Digital Sanjaya Website membantu UMKM & corporate go-digital dengan website responsif, desain modern, dan layanan lengkap.',
   ogImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
   twitterCard: 'summary_large_image',
   twitterImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
