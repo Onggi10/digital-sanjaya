@@ -8,7 +8,7 @@ const waLink =
 </script>
 
 <template>
-  <section class="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-slate-900 py-24 text-center text-white">
+  <section class="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-slate-900 min-h-screen flex flex-col items-center justify-center py-24 text-center text-white">
     <!-- Background Decor -->
     <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAzNHYtNGgtMnY0aC00djJoNHY0aDJ2LTRoNHYtMmgtNHptMC0zMFYwaC0ydjRoLTR2Mmg0djRoMnYtNGg0VjRoLTR6TTI2IDU0djEwaC0ydjEwaC00djJoNHYyaDJ2MTBoNHYtMmgtNHptMTAgMTBoLTJ2LTRoNHYyaC0yeiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L2c+PC9zdmc+')]"></div>
     <div class="absolute top-0 left-1/2 w-96 h-96 bg-primary-500 rounded-full mix-blend-overlay filter blur-3xl opacity-30 transform -translate-x-1/2 -translate-y-1/2"></div>

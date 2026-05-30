@@ -6,7 +6,7 @@ const waLink = (text) =>
 </script>
 
 <template>
-  <section id="services" class="bg-white py-24 text-center">
+  <section id="services" class="bg-white min-h-screen flex flex-col items-center justify-center py-24 text-center">
     <div class="max-w-7xl mx-auto px-6">
       <div class="mb-16">
         <h2 class="text-primary-600 font-semibold tracking-wider uppercase text-sm mb-2">Layanan Utama</h2>
